@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",                                  /* Target modern JavaScript features. */
+    "module": "CommonJS",                                /* Use CommonJS modules for Node.js. */
+    "rootDir": "src",                                    /* Specify the root folder of your TypeScript files. */
+    "outDir": "dist",                                    /* Specify the output directory for transpiled JavaScript files. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "esModuleInterop": true,                             /* Enable interoperability between CommonJS and ES Modules. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure consistent file name casing in imports. */
+    "skipLibCheck": true,                                /* Skip type checking for library files. */
+    "resolveJsonModule": true,                           /* Allow importing JSON files. */
+    "typeRoots": ["./src/types", "./node_modules/@types"], /* Include custom and node types. */
+    "baseUrl": "./",                                     /* Base directory for non-relative imports. */
+    "paths": {
+      "*": ["src/*"]                                     /* Aliases for clean imports. */
+    }
+  },
+  "include": ["src/**/*.ts"],                            /* Include all TypeScript files in the src folder. */
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]    /* Exclude unnecessary files and folders. */
+}
