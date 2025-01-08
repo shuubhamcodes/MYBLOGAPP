@@ -4,7 +4,7 @@ import {IUser} from "./User";
 
 
 export interface IBlog extends Document{
-    title:"string";
+    title:string;
     content:string;
     author: IUser["_id"];
 }
